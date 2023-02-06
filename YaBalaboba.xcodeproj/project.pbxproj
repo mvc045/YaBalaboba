@@ -87,7 +87,8 @@
 				A6F581D1297A975200F9B26D /* YaBalaboba.h */,
 				A67B8D22299153AA006E92BF /* YaBalaboba.swift */,
 			);
-			path = YaBalaboba;
+			name = YaBalaboba;
+			path = Sources/YaBalaboba;
 			sourceTree = "<group>";
 		};
 		A6F581DE297A986000F9B26D /* Service */ = {
