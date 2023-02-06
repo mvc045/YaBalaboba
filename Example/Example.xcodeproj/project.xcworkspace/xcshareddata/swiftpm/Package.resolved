@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "ya_balaboba_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mvc045/ya_balaboba_ios",
+      "state" : {
+        "branch" : "master",
+        "revision" : "db0e21351d5527d43ee3e1a1aea7092d83ba8f55"
+      }
+    }
+  ],
+  "version" : 2
+}

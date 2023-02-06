@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import YaBalaboba
 
 class ViewController: UIViewController {
 
+    var balaboba: YaBalaboba?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        balaboba = YaBalaboba()
+        
+        
+        
     }
 
 

@@ -13,6 +13,7 @@
 		A67B8D3F29915FC8006E92BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67B8D3D29915FC8006E92BF /* Main.storyboard */; };
 		A67B8D4129915FCA006E92BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67B8D4029915FCA006E92BF /* Assets.xcassets */; };
 		A67B8D4429915FCA006E92BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67B8D4229915FCA006E92BF /* LaunchScreen.storyboard */; };
+		A67B8D4E29916098006E92BF /* YaBalaboba in Frameworks */ = {isa = PBXBuildFile; productRef = A67B8D4D29916098006E92BF /* YaBalaboba */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67B8D4E29916098006E92BF /* YaBalaboba in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				A67B8D4D29916098006E92BF /* YaBalaboba */,
+			);
 			productName = Example;
 			productReference = A67B8D3429915FC8006E92BF /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,7 @@
 			);
 			mainGroup = A67B8D2B29915FC8006E92BF;
 			packageReferences = (
+				A67B8D4C29916098006E92BF /* XCRemoteSwiftPackageReference "ya_balaboba_ios" */,
 			);
 			productRefGroup = A67B8D3529915FC8006E92BF /* Products */;
 			projectDirPath = "";
@@ -218,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -362,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A67B8D4C29916098006E92BF /* XCRemoteSwiftPackageReference "ya_balaboba_ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mvc045/ya_balaboba_ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A67B8D4D29916098006E92BF /* YaBalaboba */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A67B8D4C29916098006E92BF /* XCRemoteSwiftPackageReference "ya_balaboba_ios" */;
+			productName = YaBalaboba;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A67B8D2C29915FC8006E92BF /* Project object */;
 }
