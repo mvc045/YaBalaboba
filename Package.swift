@@ -14,11 +14,11 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/realm/realm-swift",
-            .branch("master")
+            branch: "master"
         ),
         .package(
             url: "https://github.com/tristanhimmelman/ObjectMapper",
-            .branch("master")
+            branch: "master"
         ),
     ],
     targets: [
@@ -26,7 +26,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "YaBalaboba",
-            dependencies: []),
+            dependencies: [
+                .product(name: "ObjectMapper", package: "ObjectMapper"),
+                .product(name: "RealmSwift", package: "realm-swift"),
+            ]),
         .testTarget(
             name: "YaBalabobaTests",
             dependencies: ["YaBalaboba"]),
