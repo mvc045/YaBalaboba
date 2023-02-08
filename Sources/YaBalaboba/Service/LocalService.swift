@@ -12,8 +12,8 @@ protocol LocalStorageService {
     /// Сохранить сгенерированый текст
     func saveResponse(_ data: Response)
     
-    /// Получить, последние N записей
-    func getResponseList(offset: Int) -> [Response]
+    /// Получить записи
+    func getResponseList() -> [Response]
 }
 
 class ILocalStorageService: LocalStorageService {
@@ -30,7 +30,7 @@ class ILocalStorageService: LocalStorageService {
     }
     
     
-    func getResponseList(offset: Int = 10) -> [Response] {
+    func getResponseList() -> [Response] {
         let realm = try! Realm()
         return realm
                 .objects(TextBalaboba.self)

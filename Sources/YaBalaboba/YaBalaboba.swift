@@ -44,8 +44,8 @@ extension YaBalaboba: LocalStorageService {
         localStorage.saveResponse(data)
     }
     
-    public func getResponseList(offset: Int) -> [Response] {
-        return localStorage.getResponseList(offset: offset)
+    public func getResponseList() -> [Response] {
+        return localStorage.getResponseList()
     }
     
 }
