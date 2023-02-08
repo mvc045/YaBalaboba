@@ -24,6 +24,10 @@ File -> Add packages -> ```https://github.com/mvc045/YaBalaboba```
 ## Пример использования
 
 ```
+import YaBalaboba
+
+let balaboba = YaBalaboba()
+
 /// Получить варианты стилизации
 balaboba.getGenreList() { data, error in
 
