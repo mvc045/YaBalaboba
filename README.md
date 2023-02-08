@@ -39,3 +39,5 @@ balaboba.getText(query: "Hello World", genreId: 0) { data, error in
 // Получить историю
 balaboba.getResponseList()
 ```
+
+[Пример приложения](https://github.com/mvc045/YaBalabobaExample)
