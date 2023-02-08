@@ -18,20 +18,20 @@ protocol LocalStorageService {
 
 class ILocalStorageService: LocalStorageService {
     
-    var realm: Realm!
-    
-    init() {
-        realm = try! Realm()
-    }
-    
     func saveResponse(_ data: Response) {
-        try? realm.write({
-            realm.add(data.toTextBalaboba())
-        })
+        let realm = try! Realm()
+        do {
+            try realm.write({
+                realm.add(data.toTextBalaboba())
+            })
+        } catch {
+            print("Error Realm: \(error.localizedDescription)")
+        }
     }
     
     
     func getResponseList(offset: Int = 10) -> [Response] {
+        let realm = try! Realm()
         return realm
                 .objects(TextBalaboba.self)
                 .toArray()
